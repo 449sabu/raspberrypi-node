@@ -1,3 +1,8 @@
 # raspberrypi-node
 自分及び、Raspberry Pi 4 を初めて触る方に向けて、コマンドをまとめたもの
 Raspberry Pi 4 でCardanoのステーキングプールを構築することを最終目的とする。
+
+# 1. MicroSDに RaspberryPiOS を書き込む
+# 2. SSH接続できるようにする
+SSHという名前の空のファイルを作成する
+# 3. インターネットに接続できるようにする
