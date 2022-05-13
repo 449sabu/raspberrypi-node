@@ -13,7 +13,8 @@ Raspberry Pi 4 でCardanoのステーキングプールを構築することを�
 # 2. SSH接続できるようにする
 ズパイのboot直下に空のsshと名のついたファイル(拡張子なし)を作成する
 ```
-mkdir ssh /boot
+cd /Volumes/boot 
+mkdir ssh /Volumes/boot 
 ```
 
 # 3. インターネットに接続できるようにする
