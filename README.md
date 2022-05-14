@@ -17,6 +17,10 @@ cd /Volumes/boot
 mkdir ssh /Volumes/boot 
 ```
 
+```
+ssh pi@raspberrypi.local
+```
+
 # 3. インターネットに接続できるようにする
 
 
