@@ -14,7 +14,7 @@ Raspberry Pi 4 でCardanoのステーキングプールを構築することを�
 OSを書き込んだMicroSDのboot直下に空のsshと名のついたファイル(拡張子なし)を作成する
 ```
 cd /Volumes/boot 
-mkdir ssh /Volumes/boot 
+touch ssh /Volumes/boot 
 ```
 
 ```
