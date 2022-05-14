@@ -28,7 +28,7 @@ ssh pi@raspberrypi.local
 cd /Volumes/boot
 nano /Volumes/boot/wpa_supplicant.conf
 ```
-
+nanoエディタを使用します。`"ssid"`と`"pwd"`には接続先のそれぞれの値を入力しましょう。
 ```
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 country=JP
