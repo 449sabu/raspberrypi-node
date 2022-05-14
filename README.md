@@ -22,5 +22,23 @@ ssh pi@raspberrypi.local
 ```
 
 # 3. インターネットに接続できるようにする
+起動する前に`boot`直下にある`wpa_supplicant.conh`にWi-Fiを記述することで初回起動時から無線LANにアクセスできるようになる。
+
+```
+cd /Volumes/boot
+nano /Volumes/boot/wpa_supplicant.conf
+```
+
+```
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+country=JP
+update_config=1
+
+network={
+    ssid="ssid"
+    psk="pwd"
+}
+```
+
 
 
