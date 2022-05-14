@@ -39,6 +39,7 @@ network={
     psk="pwd"
 }
 ```
+参照：https://www.raspberrypi.com/documentation/computers/configuration.html#configuring-networking-2
 
 
 
