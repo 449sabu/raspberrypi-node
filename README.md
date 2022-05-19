@@ -42,5 +42,8 @@ network={
 参照：https://www.raspberrypi.com/documentation/computers/configuration.html#configuring-networking-2
 RaspberryPiを起動してから設定したWi-Fiに接続されるまで5分ほどかかる場合がある
 
+#4 ブートローダーのバージョンを確認する
+```vcgencmd bootloader_version```
+
 
 
