@@ -46,6 +46,16 @@ RaspberryPiを起動してから設定したWi-Fiに接続されるまで5分ほ
 ```
 vcgencmd bootloader_version
 ```
+USBから起動できるように設定を変更する。
+```
+sudo raspi-config
+```
+「6　Advanced Options...」を選択→
+↓
+「A6 Boot Order...」を選択
+↓
+「B2 USB Boot...」を選択
+
 
 
 
