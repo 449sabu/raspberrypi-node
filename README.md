@@ -51,6 +51,11 @@ USBから起動できるように設定を変更する。
 sudo raspi-config
 ```
 「6　Advanced Options...」を選択 → 「A6 Boot Order...」を選択 → 「B2 USB Boot...」を選択 → 「USB is default boot device」と出たらEnterを押す → 「Finish」を選択しラズパイを再起動させる。
+# シャットダウンする場合
+入力後、緑色のランプが消えるまでじっと待つ
+```
+sudo shutdown -h now
+```
 
 
 
