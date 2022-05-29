@@ -56,7 +56,18 @@ sudo raspi-config
 ```
 sudo shutdown -h now
 ```
-
+# LLVMインストール
+```
+sudo apt install llvm-13 libnuma-dev
+```
+/usr/bin/opt-9 のシンボリックリンク /usr/bin/opt を作成する
+```
+sudo ln -s /usr/bin/opt-13 /usr/bin/opt
+ls -al /usr/bin/opt
+sudo ln -s /usr/bin/llc-13 /usr/bin/llc
+ls -al /usr/bin/llc
+```
+戻り値：/usr/bin/opt -> /usr/bin/opt-9　　/usr/bin/llc -> /usr/bin/llc-13
 
 
 
