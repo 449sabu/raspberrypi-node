@@ -67,7 +67,7 @@ ls -al /usr/bin/opt
 sudo ln -s /usr/bin/llc-13 /usr/bin/llc
 ls -al /usr/bin/llc
 ```
-戻り値：/usr/bin/opt -> /usr/bin/opt-9　　/usr/bin/llc -> /usr/bin/llc-13
+戻り値：/usr/bin/opt -> /usr/bin/opt-13　　/usr/bin/llc -> /usr/bin/llc-13
 
 
 
