@@ -51,11 +51,17 @@ USBから起動できるように設定を変更する。
 sudo raspi-config
 ```
 「6　Advanced Options...」を選択 → 「A6 Boot Order...」を選択 → 「B2 USB Boot...」を選択 → 「USB is default boot device」と出たらEnterを押す → 「Finish」を選択しラズパイを再起動させる。
+
+
+
 # シャットダウンする場合
 入力後、緑色のランプが消えるまでじっと待つ
 ```
 sudo shutdown -h now
 ```
+
+
+
 # LLVMインストール
 ```
 sudo apt install llvm-13 libnuma-dev
@@ -68,6 +74,20 @@ sudo ln -s /usr/bin/llc-13 /usr/bin/llc
 ls -al /usr/bin/llc
 ```
 戻り値：/usr/bin/opt -> /usr/bin/opt-13　　/usr/bin/llc -> /usr/bin/llc-13
+
+
+
+# DBを圧縮して転送する
+`.tar.gz`という拡張子はアーカイブファイルである`.tar`を`gzip`形式で圧縮したファイルを示す。
+ファイルを圧縮する場合は以下のコマンド
+```
+tar -zcvf <圧縮後の任意のファイル名.tar.gz> <圧縮したいファイル>
+```
+`.tar.gz`ファイルを解凍する場合は以下のコマンド
+```
+tar -zxvf <xxxx.tar.gz>
+```
+オプションの意味`Z`zgip形式を指定`C`新しいtarファイルを作る`x`解凍`v`圧縮・解凍状況を表示`f`圧縮ファイル名指定
 
 
 
