@@ -85,7 +85,7 @@ tar -zcvf <圧縮後の任意のファイル名.tar.gz> <圧縮したいファ�
 ```
 `.tar.gz`ファイルを解凍する場合は以下のコマンド
 ```
-tar -zxvf <xxxx.tar.gz>
+tar -zxvf db_bkp.tar.gz
 ```
 オプションの意味`Z`zgip形式を指定`C`新しいtarファイルを作る`x`解凍`v`圧縮・解凍状況を表示`f`圧縮ファイル名指定。
 ```
