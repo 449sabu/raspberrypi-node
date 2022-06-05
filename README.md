@@ -97,5 +97,6 @@ rm db_bkp.tar.gz　#ファイルを指定して削除するコマンド
 ```
 cat /proc/interrupts
 ```
-irqbalanceによるCPUへの割り込み処理の負荷分散について(https://blog.denet.co.jp/irqbalancecpu/)
-
+[irqbalanceによるCPUへの割り込み処理の負荷分散について](https://blog.denet.co.jp/irqbalancecpu/)<br>
+[Disable IRQ Balance](https://bookofzeus.com/harden-ubuntu/server-setup/disable-irqbalance/)
+***
