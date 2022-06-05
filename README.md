@@ -92,5 +92,10 @@ tar -zxvf db_bkp.tar.gz
 rm db_bkp.tar.gz　#ファイルを指定して削除するコマンド
 ```
 
-
+***
+>実際に割り込み処理がどこのCPUで行われているかは、「/proc/interrupts」ファイルに記録されています。
+```
+cat /proc/interrupts
+```
+irqbalanceによるCPUへの割り込み処理の負荷分散について(https://blog.denet.co.jp/irqbalancecpu/)
 
