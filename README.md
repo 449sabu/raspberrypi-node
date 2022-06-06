@@ -100,3 +100,24 @@ cat /proc/interrupts
 [irqbalanceによるCPUへの割り込み処理の負荷分散について](https://blog.denet.co.jp/irqbalancecpu/)<br>
 [Disable IRQ Balance](https://bookofzeus.com/harden-ubuntu/server-setup/disable-irqbalance/)
 ***
+# Overclocking設定
+>下記の設定変更はCPUの最大周波数を2000に設定する場合
+```
+sudo nano /boot/firmware/config.txt
+```
+以下の内容をファイルの一番下に追記して保存
+```
+#Pi Node Overcloking
+over_voltage=6
+arm_freq=2000
+gpu_mem=16
+dtoverlay=disable-wifi
+dtoverlay=disable-bt
+```
+>現在の周波数を確認したい場合(Ctrl+Cで終了)
+```
+watch -n 1 cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq
+```
+[オーバークロック詳細](https://www.raspberrypi.com/documentation/computers/config_txt.html#overclocking-options)
+[gpu_memについて](https://www.raspberrypi.com/documentation/computers/config_txt.html#gpu_mem)
+***
