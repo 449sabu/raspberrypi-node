@@ -114,6 +114,10 @@ gpu_mem=16
 dtoverlay=disable-wifi
 dtoverlay=disable-bt
 ```
+再起動することで設定が適用される
+```
+sudo reboot
+```
 >現在の周波数を確認したい場合(Ctrl+Cで終了)
 ```
 watch -n 1 cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq
