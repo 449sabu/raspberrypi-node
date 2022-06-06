@@ -118,6 +118,6 @@ dtoverlay=disable-bt
 ```
 watch -n 1 cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq
 ```
-[オーバークロック詳細](https://www.raspberrypi.com/documentation/computers/config_txt.html#overclocking-options)
+[オーバークロック詳細](https://www.raspberrypi.com/documentation/computers/config_txt.html#overclocking-options)<br>
 [gpu_memについて](https://www.raspberrypi.com/documentation/computers/config_txt.html#gpu_mem)
 ***
