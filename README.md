@@ -2,14 +2,7 @@
 自分及び、Raspberry Pi 4 を初めて触る方に向けて、コマンドをまとめたもの
 Raspberry Pi 4 でCardanoのステーキングプールを構築することを最終目的とする。
 
-# 用意するもの
-・RaspberryPI ４B ×２（リレー用、ブロックプロデューサ用）
-・Micro SDカード　３２GB
-・SSD
-・SSDケース（SATA接続をUSB3.0に変換する互換性のあるもの）
-
 # 1. MicroSDに RaspberryPiOS を書き込む
-
 # 2. SSH接続できるようにする
 OSを書き込んだMicroSDのboot直下に空のsshと名のついたファイル(拡張子なし)を作成する
 ```
@@ -125,3 +118,26 @@ watch -n 1 cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq
 [オーバークロック詳細](https://www.raspberrypi.com/documentation/computers/config_txt.html#overclocking-options)<br>
 [gpu_memについて](https://www.raspberrypi.com/documentation/computers/config_txt.html#gpu_mem)
 ***
+# ZRAM構成
+インストール
+```
+sudo apt install zram-config linux-modules-extra-raspi
+```
+`/usr/bin/init-zram-swapping`構成ファイルを書き換える。
+```
+sudo nano /usr/bin/init-zram-swapping
+```
+再起動し、設定が反映されていることを確認する。
+```
+sudo reboot
+swapon -s
+```
+下記のコマンドで圧縮方式を確認できる。
+```
+cat /sys/block/zram0/comp_algorithm
+```
+>zramによるスワップをやめる場合。
+```
+sudo swapoff /dev/zram0
+rmmod zram
+```
