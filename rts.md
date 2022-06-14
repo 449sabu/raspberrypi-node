@@ -33,6 +33,6 @@ RTSオプションをデフォルトから変更することはIOGは推奨し�
 ```
 # 更新前
 +RTS -N --disable-delayed-os-memory-return -I0.1 -Iw300 -A32m -n4m -F1.5 -H2500M -T -S -RTS
-#更新後
+# 更新後
 +RTS -N2 --disable-delayed-os-memory-return -I0.3 -Iw600 -A64m -n4m -F1.5 -qg1 -RTS
 ```
