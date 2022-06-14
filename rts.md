@@ -25,7 +25,14 @@ RTSオプションをデフォルトから変更することはIOGは推奨し�
 [参考：ELMPI Poolさん](https://discord.com/channels/747675500297584720/792575220719943720/981941307771588689)<br>
 ***
 更新履歴
->22/06/06
+>22/06/06 -Relay
 ```
++RTS -N2 --disable-delayed-os-memory-return -I0.3 -Iw600 -A64m -n4m -F1.5 -qg1 -RTS
+```
+>22/6/14 -BP
+```
+# 更新前
++RTS -N --disable-delayed-os-memory-return -I0.1 -Iw300 -A32m -n4m -F1.5 -H2500M -T -S -RTS
+#更新後
 +RTS -N2 --disable-delayed-os-memory-return -I0.3 -Iw600 -A64m -n4m -F1.5 -qg1 -RTS
 ```
